@@ -1,0 +1,26 @@
+.iconButton {
+  cursor: pointer;
+  padding: 6px ;
+  text-align: center;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin-right: 10%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(131, 204, 238, 0.241);
+}
+
+.iconButton:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#linkbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 40%;
+}

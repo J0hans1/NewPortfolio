@@ -1,0 +1,15 @@
+.textbox {
+    width: 40%;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.textbox > * {
+    margin: 30px 0px;
+}
+
+.highlight {
+    background: linear-gradient(rgb(124, 224, 255), rgb(238, 141, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
