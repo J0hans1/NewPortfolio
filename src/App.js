@@ -9,6 +9,7 @@ function App() {
       <div id="back-glass" className="fullscreen glasspane">
         <Navbar/>
         <div className='page-container'>
+
           <div className='page'>
             <div className='spalte'>
 
@@ -31,9 +32,9 @@ function App() {
             </div>
             <div className='spalte'></div>
           </div>
+{/* 
           <div className='page'>
             <div className='spalte'>
-
               <TextBox title="About ">
                 <p>
                   I am a computer science student at the
@@ -46,12 +47,11 @@ function App() {
                   of Front-End development, and UI-Design.
                 </p>
               </TextBox>
-
               <LinkButtons/>
-
             </div>
             <div className='spalte'></div>
           </div>
+
           <div className='page'>
             <div className='spalte'>
 
@@ -73,6 +73,7 @@ function App() {
             </div>
             <div className='spalte'></div>
           </div>
+
           <div className='page'>
             <div className='spalte'>
 
@@ -94,6 +95,7 @@ function App() {
             </div>
             <div className='spalte'></div>
           </div>
+
           <div className='page'>
             <div className='spalte'>  
 
@@ -114,7 +116,7 @@ function App() {
 
             </div>
             <div className='spalte'></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

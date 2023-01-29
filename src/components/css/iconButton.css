@@ -1,10 +1,11 @@
 .iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 6px ;
-  text-align: center;
-  vertical-align: middle;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+
   border-radius: 20px;
   transition: 0.2s;
   margin-right: 10%;
@@ -18,9 +19,26 @@
     transition: 0.2s;
 }
 
+.iconButton:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
 #linkbuttons {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    width: 40%;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+#Github-button:hover {
+  background: #17151586;
+}
+
+#LinkedIn-button:hover {
+  background: #0e77a889;
+}
+
+#Mail-button:hover {
+  background: #c7161075;
 }
