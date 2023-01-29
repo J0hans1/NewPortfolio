@@ -1,0 +1,12 @@
+.description-container{
+    width: 200px;
+}
+
+.description-container p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.project-split{
+    display: flex;
+}

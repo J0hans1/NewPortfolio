@@ -71,3 +71,10 @@ html, body {
   width: 50%;
   margin-left: 10%;
 }
+
+.courses{
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-between;
+}

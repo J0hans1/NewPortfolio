@@ -1,0 +1,61 @@
+.UIimage{
+    width: 250px;
+    height: 150px;
+    border-radius: 60px;
+    border: 1px rgba(186, 246, 242, 0.589) solid;
+}
+
+.UIimage-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+  }
+  
+  
+  .UIimage-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.717);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  
+  .UIimage-container:hover .UIimage-overlay {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .UIimage-overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.717);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.2s ease;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      display: flex;
+    }
+  }
+
+  
+  .UIimage-container:hover .UIimage-overlay {
+    display: flex;
+  }
+  
