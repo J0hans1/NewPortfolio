@@ -9,14 +9,16 @@ const LinkButtons = (props) => {
                 href="https://github.com/J0hans1/"
                 image="Github"
             />
-
             <IconButton 
                 href="https://www.linkedin.com/in/markus-johansen-64625b208/"
                 image="LinkedIn"
             />
-
             <IconButton 
                 href="mail"
+                image="Mail"
+            />
+            <IconButton 
+                href="cv"
                 image="Mail"
             />
         </div>

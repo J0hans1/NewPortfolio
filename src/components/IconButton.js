@@ -13,6 +13,8 @@ const IconButton = (props) => {
         event.preventDefault();
         if (props.href === 'mail') {
             window.location.href = `mailto:markusarj@gmail.com`;
+        } else if (props.href === 'cv') {
+            window.location.href = require(`../docs/CV.pdf`);
         } else {
             window.open(props.href, "_blank");  
         }

@@ -17,7 +17,7 @@ const Projects = () => {
                 />
 
                 <Project 
-                project="Discogolf" 
+                project="BookOfCook" 
                 title="Digital Recipe Application" 
                 color="purple" 
                 href="https://github.com/J0hans1/Portofolio"
@@ -28,7 +28,7 @@ const Projects = () => {
                 "
                 />
                 <Project 
-                project="Discogolf" 
+                project="Portfolio1.0" 
                 title="Portfolio" 
                 color="green" 
                 href="https://github.com/J0hans1/Portofolio"

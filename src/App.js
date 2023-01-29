@@ -2,7 +2,6 @@ import './App.css';
 import TextBox from './components/textbox';
 import LinkButtons from './components/LinkButtons';
 import Navbar from './components/Navbar';
-import UIImage from './components/UIImage';
 import GlassCard from './components/GlassCard';
 import Courses from './components/Courses';
 import Projects from './components/Projects';
@@ -35,52 +34,10 @@ function App() {
 
             </div>
             <div className='spalte'>
-             {/* <GlassCard split='true' color='blue'>
-                <div className='half'>
-                  <h2>Frisbee Golf Companion App</h2>
-                  <p>
-                    IT1901 - Informatics Project
-                  </p>
-                  <p>
-                    App for Logging scorecards at
-                    different frisbee golf courses
-                    din Trondheim. 
-                  </p>
-                </div>
-
-                <div className='half'>
-                  <UIImage img="Discogolf.png" href="https://github.com/J0hans1/Portofolio"/>
-                </div>
-              </GlassCard> */}
-
-              
-  {/* 
-              <GlassCard split='true'>
-                <div>
-                  <h3>Name</h3>
-                  <h3>Phone</h3>
-                  <h3>Email</h3>
-                  <h3>Adress</h3>
-                </div>
-                <div>
-                  <p>Markus A. R. Johansen</p>
-                  <p>+47 934 00 000</p>
-                  <p>markusarj@gmail.com</p>
-                  <p>Clara Holsts Veg 23, Trondheim 7046, Norway</p>
-                </div>
-              </GlassCard>
-
-              <GlassCard>
-                <img src='./img/NTNU.png' alt="NTNU Logo"/>
-              </GlassCard> */}
-
-               <Courses/>
-              {/* <Projects/> */}
-
 
             </div>
           </div>
-{/* 
+
           <div className='page'>
             <div className='spalte'>
               <TextBox title="About ">
@@ -95,9 +52,24 @@ function App() {
                   of Front-End development, and UI-Design.
                 </p>
               </TextBox>
-              <LinkButtons/>
+              <GlassCard split='true'>
+                <div>
+                  <h3>Name</h3>
+                  <h3>Phone</h3>
+                  <h3>Email</h3>
+                  <h3>Adress</h3>
+                </div>
+                <div>
+                  <p>Markus A. R. Johansen</p>
+                  <p>+47 934 00 000</p>
+                  <p>markusarj@gmail.com</p>
+                  <p>Clara Holsts Veg 23, Trondheim 7046, Norway</p>
+                </div>
+              </GlassCard>
             </div>
-            <div className='spalte'></div>
+            <div className='spalte'>
+              {/*IMAGE OF ME */}
+            </div>
           </div>
 
           <div className='page'>
@@ -116,15 +88,17 @@ function App() {
                 </p>
               </TextBox>
 
-              <LinkButtons/>
-
+              <GlassCard>
+                <img src='./img/NTNU.png' alt="NTNU Logo"/>
+              </GlassCard>
             </div>
-            <div className='spalte'></div>
+            <div className='spalte'>
+                <Courses/>
+            </div>
           </div>
 
           <div className='page'>
             <div className='spalte'>
-
               <TextBox title="Skillset and technologies ">
                 <p>
                   I am a computer science student at the
@@ -137,11 +111,11 @@ function App() {
                   of Front-End development, and UI-Design.
                 </p>
               </TextBox>
-
-              <LinkButtons/>
-
+              {/*Skillset component bar*/}
             </div>
-            <div className='spalte'></div>
+            <div className='spalte'>
+              {/*Technologies component*/}
+            </div>
           </div>
 
           <div className='page'>
@@ -159,12 +133,11 @@ function App() {
                   of Front-End development, and UI-Design.
                 </p>
               </TextBox>
-
-              <LinkButtons/>
-
             </div>
-            <div className='spalte'></div>
-          </div> */}
+            <div className='spalte'>
+                <Projects/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
