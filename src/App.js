@@ -7,6 +7,7 @@ import Courses from './components/Courses';
 import Projects from './components/Projects';
 import NTNU from './img/NTNU.png';
 import Page from './components/page';
+import Exps from './components/Exps';
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
 
           <Page name="home">
             <div className='spalte'>
-
               <TextBox>
                 <h2>Hello, I am <span className="highlight">Markus Johansen</span></h2>
                 <p>
@@ -31,13 +31,9 @@ function App() {
                   of Front-End development, and UI-Design.
                 </p>
               </TextBox>
-
               <LinkButtons/>
-
             </div>
-            <div className='spalte'>
-
-            </div>
+            <div className='spalte'></div>
           </Page>
 
           <Page name="about">
@@ -116,7 +112,7 @@ function App() {
               {/*Skillset component bar*/}
             </div>
             <div className='spalte'>
-              {/*Technologies component*/}
+              <Exps/>
             </div>
           </Page>
 
