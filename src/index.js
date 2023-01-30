@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./fonts/Inter-Regular.woff"
+import "./fonts/Inter-Regular.woff2"
+import "./fonts/Inter-Bold.woff"
+import "./fonts/Inter-Bold.woff2"
+import "./fonts/Inter-Thin.woff"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
     <App />
   </React.StrictMode>

@@ -5,6 +5,7 @@ const Course = (props) => {
         <GlassCard color={props.color}>
             <h2>{props.title}</h2>
             <p>{props.code}</p>
+            <br/>
             <p>{props.description}</p>
         </GlassCard>
     );
