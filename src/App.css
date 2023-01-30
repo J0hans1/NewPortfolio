@@ -45,7 +45,7 @@ html, body {
 .page-container{
   width: 90%;
   padding-left: 10%;
-  max-width: 100vw
+  max-width: 100vw;
 }
 
 
@@ -77,4 +77,14 @@ html, body {
   flex-direction: column;
   height: 70%;
   justify-content: space-between;
+}
+
+.sticky-wrapper{
+  
+}
+
+.sticky{
+  position:-webkit-sticky; 
+  position:sticky;
+  top:0;
 }

@@ -6,6 +6,7 @@ import GlassCard from './components/GlassCard';
 import Courses from './components/Courses';
 import Projects from './components/Projects';
 import NTNU from './img/NTNU.png';
+import Page from './components/page';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Navbar/>
         <div className='page-container'>
 
-          <div className='page'>
+          <Page name="home">
             <div className='spalte'>
 
               <TextBox>
@@ -37,9 +38,9 @@ function App() {
             <div className='spalte'>
 
             </div>
-          </div>
+          </Page>
 
-          <div className='page'>
+          <Page name="about">
             <div className='spalte'>
               <TextBox title="About ">
                 <p>
@@ -71,9 +72,9 @@ function App() {
             <div className='spalte'>
               {/*IMAGE OF ME */}
             </div>
-          </div>
+          </Page>
 
-          <div className='page'>
+          <Page name="education">
             <div className='spalte'>
 
               <TextBox title="Education ">
@@ -96,9 +97,9 @@ function App() {
             <div className='spalte'>
                 <Courses/>
             </div>
-          </div>
+          </Page>
 
-          <div className='page'>
+          <Page name="skillsets">
             <div className='spalte'>
               <TextBox title="Skillset and technologies ">
                 <p>
@@ -117,9 +118,9 @@ function App() {
             <div className='spalte'>
               {/*Technologies component*/}
             </div>
-          </div>
+          </Page>
 
-          <div className='page'>
+          <Page name="experience">
             <div className='spalte'>  
 
               <TextBox title="Experience ">
@@ -137,7 +138,7 @@ function App() {
             <div className='spalte'>
                 <Projects/>
             </div>
-          </div>
+          </Page>
         </div>
       </div>
     </div>
