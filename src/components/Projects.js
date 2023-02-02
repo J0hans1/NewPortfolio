@@ -16,7 +16,7 @@ const Projects = () => {
                 "
                 >
                     <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Apache_Maven_logo.svg/1200px-Apache_Maven_logo.svg.png" alt="Apache"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Apache_HTTP_Server_Logo_%282016%29.svg/2560px-Apache_HTTP_Server_Logo_%282016%29.svg.png" alt="Apache"/>
                     <img src="https://img.icons8.com/color/48/000000/spring-logo.png" alt="Spring"/>
                     <img src="https://img.icons8.com/color/256/git.png" alt="Git"/>
                 </Project>
@@ -27,9 +27,9 @@ const Projects = () => {
                     color="purple" 
                     href="https://github.com/J0hans1/Portofolio"
                     desc="
-                        Application for creating
-                        food-recipes and store
-                        them in a digital format.
+                        Application for renting tools from 
+                        other users, and for renting out tools.
+                        The project was made in a group of 6 members.
                     "
                 >
                     <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React Native"/>

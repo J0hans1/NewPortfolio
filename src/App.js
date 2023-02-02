@@ -10,12 +10,13 @@ import Page from './components/page';
 import Exps from './components/Exps';
 import BusinessCard from './components/BuisnessCard';
 import Circles from './components/Circles';
+import ME from './img/Me.png';
 
 function App() {
   return (
     <div id="background" className="fullscreen">
       <Circles/>                                                
-      <div id="back-glass" className="fullscreen glasspane sticky-wrapper">
+      <div id="back-glass" className="fullscreen  sticky-wrapper">
         <Navbar/>
         <div className='page-container'>
 
@@ -56,7 +57,9 @@ function App() {
               <BusinessCard/> 
             </div>
             <div className='spalte'>
-              {/*IMAGE OF ME */}
+              <div id='meImgContainer' className='glasspane'>
+                <img id="meImg" src={ME} alt="me"/>
+              </div>
             </div>
           </Page>
 
@@ -111,13 +114,19 @@ function App() {
 
               <TextBox title="Experience ">
                 <p>
-                  Write something here about different projects
-
-                  Write something here about NAV internship
-
-                  write something about ProKom
-
-                  Write something about Customer service in store
+                  As a student of computer science, i have had the opportunity to work with
+                  many different technologies and projects, both at school and in my spare time.
+                  I have worked with both front-end and back-end development, 
+                  and have had the opportunity to work on many different stacks
+                </p>
+                <p>
+                  In the summer of 2023 i will be working as a developer junior consultant at, 
+                  NAV IT (Norwegian Labour and Welfare Administration) in Oslo. There i worked in 
+                  a team of 5 developers, and 2 consultants. 
+                </p>
+                <p>
+                  I have also worked as a graphic designer and jorunalist for the student-organisation
+                  for computer science students at NTNU, Linjeforeningen Online
                 </p>
               </TextBox>
             </div>

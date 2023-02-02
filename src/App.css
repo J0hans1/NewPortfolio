@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  color: #e7e7e7;
+  color: #e7e7e7e7;
 }
+
 
 html, body {
   height: 100%;
@@ -20,6 +21,7 @@ html, body {
 }
 
 #back-glass {
+  background: rgba(255, 255, 255, 0.079);
   height: 100%;
   display: flex;
   top: 0;
@@ -32,7 +34,7 @@ html, body {
 }
 
 .glasspane {
-  background: rgba(255, 255, 255, 0.067);
+  background: rgba(255, 255, 255, 0.185);
   /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   backdrop-filter: blur( 3px );
   -webkit-backdrop-filter: blur( 6px );
@@ -40,7 +42,6 @@ html, body {
 
 .page-container{
   width: 90%;
-  padding-left: 10%;
   max-width: 100vw;
   top: 0;
   position: relative;
@@ -74,4 +75,20 @@ html, body {
   position:-webkit-sticky; 
   position:sticky;
   top:0;
+}
+
+
+#meImgContainer{
+  background: linear-gradient(142.84deg, rgba(88, 147, 173, 0.584) 30.3%, rgba(211, 93, 232, 0.544) 85.27%, rgba(212, 93, 232, 0.33) 85.27%);
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#meImg{
+  height: 107%;
+  border-radius: 50%;
 }
