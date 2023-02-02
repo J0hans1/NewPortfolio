@@ -4,21 +4,19 @@ import "./css/project.css";
 
 const Project = (props) => {
     return (
-        <GlassCard color={props.color} width='fit-content'>
-          <h2>{props.title}</h2>
-          <br/>
-
-          <div className="project-split">
-            <div className="description-container">
-                <p>
-                    {props.desc}
-                </p>
+        <GlassCard color={props.color} width='70%'>
+            <div className="project-content">
+                <h2>{props.title}</h2>
+                <div className="project-split">
+                    <p>
+                        {props.desc}
+                    </p>
+                    <UIImage img={`${props.project}.png`} href={props.href}/>
+                </div>  
+                <div className="tech-icons">
+                    {props.children}   
+                </div>     
             </div>
-            <div>
-                <UIImage img={`${props.project}.png`} href={props.href}/>
-            </div>            
-          </div>
-
       </GlassCard>
     );
 };

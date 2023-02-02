@@ -1,0 +1,13 @@
+.category{
+    line-height: 4em;
+}
+
+.property{
+    display: flex;
+}
+
+.property h3 {
+    font-size: 1.5em;
+    margin-right: 20px;
+    width: 30%;
+}

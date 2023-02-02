@@ -19,15 +19,12 @@ html, body {
 #background {
   background-color: #171717;
   height: max-content;
+  position: relative;
 }
 
 #background-glass {
   z-index: 2;
   height: fit-content;
-}
-
-#circle-layer{
-  z-index: 1;
 }
 
 .fullscreen{
@@ -36,7 +33,7 @@ html, body {
 }
 
 .glasspane {
-  background: rgba(255, 255, 255, 0.058);
+  background: rgba(255, 255, 255, 0.067);
   /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   backdrop-filter: blur( 3px );
   -webkit-backdrop-filter: blur( 6px );
@@ -49,13 +46,6 @@ html, body {
 }
 
 
-.circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: #aef330;
-  margin: 0 auto;
-}
 
 .page {
   display: flex;
@@ -77,10 +67,6 @@ html, body {
   flex-direction: column;
   height: 70%;
   justify-content: space-between;
-}
-
-.sticky-wrapper{
-  
 }
 
 .sticky{

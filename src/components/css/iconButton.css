@@ -14,6 +14,10 @@
   border-color: rgba(131, 204, 238, 0.241);
 }
 
+.ButtonIcon {
+  height: 40px;
+}
+
 .iconButton:hover {
     transform: scale(1.1);
     transition: 0.2s;
@@ -36,9 +40,13 @@
 }
 
 #LinkedIn-button:hover {
-  background: #0e77a889;
+  background: #1394d089;
 }
 
 #Mail-button:hover {
-  background: #c7161075;
+  background: #e2851375;
+}
+
+#CV-button:hover {
+  background: #49ead275;
 }

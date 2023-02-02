@@ -19,7 +19,7 @@ const LinkButtons = (props) => {
             />
             <IconButton 
                 href="cv"
-                image="Mail"
+                image="CV"
             />
         </div>
     );

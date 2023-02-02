@@ -36,14 +36,14 @@ const NavButton = (props) => {
         >
             <p
                 style={{
-                    color: active ? "#e7e7e7" : "#e7e7e7bc"
+                    // color: active ? "#e7e7e7" : "#e7e7e7bc"
                     }}
             >
                 {props.text}
             </p>
             <div
                 style={{
-                    width: active ? "100%" : "0%"
+                    // width: active ? "100%" : "0%"
                     }}
             >
             </div>
