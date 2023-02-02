@@ -23,7 +23,7 @@ const Projects = () => {
 
                 <Project 
                     project="ToolBox" 
-                    title="ToolBox - A- pplication for renting tools" 
+                    title="ToolBox - Application for renting tools" 
                     color="purple" 
                     href="https://github.com/J0hans1/Portofolio"
                     desc="

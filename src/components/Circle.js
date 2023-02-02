@@ -31,8 +31,9 @@ function Circle(props) {
   // };
 
   return (
-    <div className="circle sticky"
+    <div className="circle"
     style={{
+      position: 'fixed',
       width: props.size,
       height: props.size,
       background: props.color,
