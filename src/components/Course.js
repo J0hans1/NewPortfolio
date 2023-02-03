@@ -2,7 +2,7 @@ import GlassCard from "./GlassCard";
 
 const Course = (props) => {
     return (
-        <GlassCard color={props.color}>
+        <GlassCard color="blue">
             <h2>{props.title}</h2>
             <p>{props.code}</p>
             <br/>

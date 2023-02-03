@@ -4,7 +4,7 @@ import "./css/project.css";
 
 const Project = (props) => {
     return (
-        <GlassCard color={props.color} width='70%'>
+        <GlassCard color="blue" width='70%'>
             <div className="project-content">
                 <h2>{props.title}</h2>
                 <div className="project-split">

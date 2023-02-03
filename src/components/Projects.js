@@ -7,7 +7,6 @@ const Projects = () => {
             <Project 
                 project="Discogolf" 
                 title="DiscoGolf - Frisbee Golf App" 
-                color="green" 
                 href="https://github.com/J0hans1/Portofolio"
                 desc="
                     App for Logging scorecards at
@@ -15,16 +14,16 @@ const Projects = () => {
                     din Trondheim.
                 "
                 >
-                    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java"/>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Apache_HTTP_Server_Logo_%282016%29.svg/2560px-Apache_HTTP_Server_Logo_%282016%29.svg.png" alt="Apache"/>
                     <img src="https://img.icons8.com/color/48/000000/spring-logo.png" alt="Spring"/>
                     <img src="https://img.icons8.com/color/256/git.png" alt="Git"/>
+                    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java"/>
+
                 </Project>
 
                 <Project 
                     project="ToolBox" 
                     title="ToolBox - Application for renting tools" 
-                    color="purple" 
                     href="https://github.com/J0hans1/Portofolio"
                     desc="
                         Application for renting tools from 
@@ -43,7 +42,6 @@ const Projects = () => {
                 <Project 
                     project="Portfolio1.0" 
                     title="Portfolio" 
-                    color="blue" 
                     href="https://github.com/J0hans1/Portofolio"
                     desc="Personal Webpage deployed at Johansen.tech."
                 >
