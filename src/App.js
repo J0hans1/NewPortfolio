@@ -10,17 +10,17 @@ import Page from './components/page';
 import Exps from './components/Exps';
 import BusinessCard from './components/BuisnessCard';
 import Circles from './components/Circles';
-import ME from './img/Me.png';
+import ME from './img/Me3.png';
+import './scrollsnap.css'
 
 function App() {
   return (
     <div id="background" className="fullscreen">
       <Circles/>                                                
-      <div id="back-glass" className="fullscreen  sticky-wrapper">
+      <div id="back-glass" className="fullscreen glasspane sticky-wrapper">
         <Navbar/>
-        <div className='page-container'>
-
-          <Page name="home">
+        <div className='page-container scroll-snapping'>
+          <Page name="home" >
             <div className='spalte'>
               <TextBox>
                 <h2>Hello, I am <span className="highlight">Markus Johansen</span></h2>
