@@ -6,8 +6,8 @@ const Projects = () => {
         <div id="projects">
             <Project 
                 project="Discogolf" 
-                title="DiscoGolf - Frisbee Golf App" 
-                href="https://github.com/J0hans1/Portofolio"
+                title="DiscoGolf" 
+                href="https://github.com/J0hans1/IT1901-DiscoGolf"
                 desc="
                     App for Logging scorecards at
                     different frisbee golf courses
@@ -23,12 +23,10 @@ const Projects = () => {
 
                 <Project 
                     project="ToolBox" 
-                    title="ToolBox - Application for renting tools" 
+                    title="ToolBox" 
                     href="https://github.com/J0hans1/Portofolio"
                     desc="
-                        Application for renting tools from 
-                        other users, and for renting out tools.
-                        The project was made in a group of 6 members.
+                        Application for renting tools and utilities
                     "
                 >
                     <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React Native"/>
@@ -43,7 +41,7 @@ const Projects = () => {
                     project="Portfolio1.0" 
                     title="Portfolio" 
                     href="https://github.com/J0hans1/Portofolio"
-                    desc="Personal Webpage deployed at Johansen.tech."
+                    desc="Former personal Webpage deployed at Johansen.tech."
                 >
                     <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React Native"/>
                     <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="Javascript"/>

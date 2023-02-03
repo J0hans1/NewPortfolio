@@ -1,15 +1,12 @@
 .textbox {
     width: 100%;
-    font-size: 1.5em;
-    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    line-height: 1.75em;
 }
 
 .textbox > * {
     margin: 30px 0px;
-}
-
-.textbox p{
-    line-height: 1.75em;
 }
 
 .highlight {

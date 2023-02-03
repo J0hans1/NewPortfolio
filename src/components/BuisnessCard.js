@@ -19,7 +19,7 @@ const BusinessCard = (props) => {
                 </div>
                 <div className="property">
                     <h3>Adress</h3>
-                    <p>Clara Holsts Veg 23, Trondheim 7046, Norway</p>
+                    <p>Clara Holsts Veg 23, Trondheim</p>
                 </div>
                 <div className="property">
                     <h3>Homepage</h3>

@@ -1,12 +1,15 @@
 import GlassCard from "./GlassCard";
+import './css/course.css'
 
 const Course = (props) => {
     return (
         <GlassCard color="blue">
-            <h2>{props.title}</h2>
-            <p>{props.code}</p>
-            <br/>
-            <p>{props.description}</p>
+            <div className="course-content">
+                <h2>{props.title}</h2>
+                <p>{props.code}</p>
+                <br/>
+                <p>{props.description}</p>
+            </div>
         </GlassCard>
     );
 };

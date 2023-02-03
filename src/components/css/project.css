@@ -29,10 +29,13 @@
     height: 200px;
     overflow: hidden;
     transition: 220ms;
+    font-size: 0.90em;
+    letter-spacing: 3px;
+    line-height: 2em;
 }
 
 .project-content:hover{
-    height: 260px;
+    height: 270px;
     overflow: hidden;
     transition: 220ms;
 }

@@ -1,5 +1,7 @@
 .category{
-    line-height: 3em;
+    font-size: 1em;
+    letter-spacing: 3px;
+    line-height: 2.2em;
 }
 
 .property{
@@ -7,7 +9,6 @@
 }
 
 .property h3 {
-    font-size: 1.5em;
     margin-right: 20px;
     width: 30%;
 }

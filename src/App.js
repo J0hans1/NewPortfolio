@@ -17,7 +17,7 @@ function App() {
   return (
     <div id="background" className="fullscreen">
       <Circles/>                                                
-      <div id="back-glass" className="fullscreen glasspane sticky-wrapper">
+      <div id="back-glass" className="fullscreen  sticky-wrapper">
         <Navbar/>
         <div className='page-container scroll-snapping'>
           <Page name="home" >
