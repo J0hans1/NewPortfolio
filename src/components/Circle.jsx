@@ -1,34 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
+
 //react component using the circle class. changeable size, color and position
 import './css/circle.css'
 function Circle(props) {
-  // const [scrollTop, setScrollTop] = useState(0);
-  // const [scrollLeft, setScrollLeft] = useState(0);
-  // const [circleSize, setCircleSize] = useState(100);
+  const [scrollY, setScrollY] = useState(0);
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    function handleScroll() {
+      setScrollY(window.scrollY);
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [props.topFactor, props.leftFactor]); // Add the props in the dependency array
 
-  // const styles = {
-  //   position: 'fixed',
-  //   top: `${scrollTop}px`,
-  //   left: `${scrollLeft}px`,
-  //   width: `${circleSize}px`,
-  //   height: `${circleSize}px`,
-  //   borderRadius: '50%',
-  //   backgroundColor: props.color,
-  // };
-
-  // const handleScroll = () => {
-  //   setScrollTop(window.scrollY + props.top);
-  //   setScrollLeft(window.scrollX + props.left);
-  //   setCircleSize(props.size + window.scrollY / 100);
-  // };
 
   return (
     <div className="circle"
@@ -37,8 +22,8 @@ function Circle(props) {
       width: props.size,
       height: props.size,
       background: props.color,
-      left: props.left,
-      top: props.top,
+      left: `${(scrollY * props.leftFactor)}px` ,
+      top: `${(scrollY * props.topFactor)}px`,
     }}
 
     >

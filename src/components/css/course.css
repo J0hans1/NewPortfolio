@@ -1,4 +1,11 @@
 .course-content{
     font-size: 1em;
     letter-spacing: 3px;
-}   
+    overflow: hidden;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.course-content:hover{
+    height: 100px;
+}

@@ -26,7 +26,7 @@
 }
 
 .project-content{
-    height: 200px;
+    height: 190px;
     overflow: hidden;
     transition: 220ms;
     font-size: 0.90em;
@@ -35,7 +35,7 @@
 }
 
 .project-content:hover{
-    height: 270px;
+    height: 260px;
     overflow: hidden;
     transition: 220ms;
 }

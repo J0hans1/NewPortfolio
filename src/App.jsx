@@ -11,7 +11,6 @@ import Exps from './components/Exps';
 import BusinessCard from './components/BuisnessCard';
 import Circles from './components/Circles';
 import ME from './img/Me3.png';
-import './scrollsnap.css'
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
       <Circles/>                                                
       <div id="back-glass" className="fullscreen  sticky-wrapper">
         <Navbar/>
-        <div className='page-container scroll-snapping'>
+        <div className='page-container snap-container'>
           <Page name="home" >
             <div className='spalte'>
               <TextBox>
