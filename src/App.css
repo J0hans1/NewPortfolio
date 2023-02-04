@@ -88,10 +88,25 @@ html, body {
   width: 600px;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
-#meImg{
+.meImg{
   height: 107%;
-  border-radius: 50%;
 }
+
+#img2{
+  display: none;
+  height: 110%;
+}
+
+#meImgContainer:hover #img2{
+  display: block;
+}
+
+#meImgContainer:hover #img1{
+  display: none;
+}
+
+

@@ -10,7 +10,9 @@ import Page from './components/page';
 import Exps from './components/Exps';
 import BusinessCard from './components/BuisnessCard';
 import Circles from './components/Circles';
-import ME from './img/Me3.png';
+import IMG1 from './img/cv-transparent-cropped.png';
+import IMG2 from './img/smil-transparent-cropped.png';
+
 
 function App() {
   return (
@@ -57,7 +59,8 @@ function App() {
             </div>
             <div className='spalte'>
               <div id='meImgContainer' className='glasspane'>
-                <img id="meImg" src={ME} alt="me"/>
+                <img id="img1" className='meImg' src={IMG1} alt="me"/>
+                <img id="img2"  src={IMG2} alt="me"/>
               </div>
             </div>
           </Page>
