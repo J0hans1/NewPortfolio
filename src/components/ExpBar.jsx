@@ -14,4 +14,4 @@ const Exp = (props) => {
     );
 };
 
-export default Exp;
+export default Exp; 

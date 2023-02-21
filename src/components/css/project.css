@@ -3,8 +3,7 @@
 }
 
 .description-container p{
-    font-size: 20px;
-    line-height: 30px;
+    line-height: 10px;
 }
 
 .project-split{
@@ -15,7 +14,7 @@
 
 .project-split p{
  margin-right: 20px;
- font-size: 1.25em;
+ font-size: 1.5em;
 }
 
 .tech-icons{
@@ -29,7 +28,7 @@
     height: 190px;
     overflow: hidden;
     transition: 220ms;
-    font-size: 0.90em;
+    font-size: 0.70em;
     letter-spacing: 3px;
     line-height: 2em;
 }
