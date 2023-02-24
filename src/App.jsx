@@ -133,7 +133,7 @@ function App() {
               </TextBox>
             </div>
             <div className='spalte'>
-                <Projects/>
+                <Projects/> 
             </div>
           </Page>
         </div>
