@@ -1,4 +1,5 @@
 import GlassCard from "./GlassCard";
+import { CourseData } from "../obj.ts";
 
 const Course = (props) => {
     return (
@@ -16,29 +17,10 @@ const Course = (props) => {
 const Courses = () => {
     return (
         <div className='courses'>
-            <Course
-                title="Human-Machine interaction"
-                code="TDT4180"
-                description="UI/UX, Design, User testing, Figma"
-            />
-
-            <Course
-                title="Software Security"
-                code="TDT4237"
-                description="Attacks, Countermeasures, Security analysis, Cryptography, Django, Python"
-            />
-
-            <Course
-                title="Software Development"
-                code="TDT4140"
-                description="Scrum, Agile, Extreme developement, React, Express.js, Node.js, Mongo.db"
-            />
-
-            <Course
-                title="Object-Oriented programming"
-                code="TDT4100"
-                description="Java, Objects, Classes, Inheritance, Abstraction, Backend, Frontend"
-            />  
+            <Course title={CourseData.c1.title} code={CourseData.c1.code} description={CourseData.c1.text}/>
+            <Course title={CourseData.c2.title} code={CourseData.c2.code} description={CourseData.c2.text}/>
+            <Course title={CourseData.c3.title} code={CourseData.c3.code} description={CourseData.c3.text}/>
+            <Course title={CourseData.c4.title} code={CourseData.c4.code} description={CourseData.c4.text}/>  
       </div>
     );
 };

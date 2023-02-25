@@ -12,6 +12,7 @@ import IMG1 from './img/cv-transparent-cropped.png';
 import IMG2 from './img/smil-transparent-cropped.png';
 import React, { useRef } from "react";
 import './components/css/textbox.css'
+import {PageText} from './obj.ts';
 
 const TextBox = (props) => {
   return (
@@ -42,17 +43,9 @@ function App() {
           <Page name="home" >
             <div className='spalte'>
               <TextBox>
-                <h2 className='text-3xl'>Hello, I am <span className="highlight">Markus Johansen</span></h2>
-                <p>
-                  I am a computer science student at the
-                  Norwegian University of  Science and Technology (NTNU),
-                  Based In Trondheim, Norway.
-                </p>
-                <p>
-                  I made this portfolio to challengemyself in learning 
-                  new technologies, and broaden my vision in the field 
-                  of Front-End development, and UI-Design.
-                </p>
+                <h2 className='text-3xl'>{PageText.p1.header} <span className="highlight">{PageText.p1.name}</span></h2>
+                <p>{PageText.p1.text1}</p>
+                <p>{PageText.p1.text2}</p>
               </TextBox>
               <LinkButtons/>
             </div>
@@ -61,17 +54,9 @@ function App() {
 
           <Page name="about">
             <div className='spalte'>
-              <TextBox title="About ">
-                <p>
-                  I am a computer science student at the
-                  Norwegian University of  Science and Technology (NTNU),
-                  Based In Trondheim, Norway.
-                </p>
-                <p>
-                  I made this portfolio to challenge myself in learning 
-                  new technologies, and broaden my vision in the field 
-                  of Front-End development, and UI-Design.
-                </p>
+              <TextBox title={PageText.p2.title}>
+                <p>{PageText.p2.text1}</p>
+                <p>{PageText.p2.text2}</p>
               </TextBox>
               <BusinessCard/> 
             </div>
@@ -88,18 +73,9 @@ function App() {
 
           <Page name="education">
             <div className='spalte'>
-
-              <TextBox title="Education ">
-                <p>
-                  Write something here about NTNU and my time here.
-                  Then write something about the “student-organisation
-                  for computer science students” Linjeforeningen Online.
-                </p>
-                <p>   
-                  Through my education i have great experience using GiT,
-                  and working in SCRUM teams. I have also aquired some skills in UI/UX,
-                  Algorithm design, Network and Fullstack devlopement
-                </p>
+              <TextBox title={PageText.p3.title}>
+                <p> {PageText.p3.text1} </p>
+                <p> {PageText.p3.text2} </p>
               </TextBox>
 
               <GlassCard>
@@ -113,19 +89,10 @@ function App() {
 
           <Page name="skillsets">
             <div className='spalte'>
-              <TextBox title="Skillset and technologies ">
-                <p>
-                  I am a computer science student at the
-                  Norwegian University of  Science and Technology (NTNU),
-                  Based In Trondheim, Norway.
-                </p>
-                <p>
-                  I made this portfolio to challenge myself in learning 
-                  new technologies, and broaden my vision in the field 
-                  of Front-End development, and UI-Design.
-                </p>
+              <TextBox title={PageText.p4.title}>
+                <p>{PageText.p4.text1}</p>
+                <p>{PageText.p4.text2}</p>
               </TextBox>
-              {/*Skillset component bar*/}
             </div>
             <div className='spalte'>
               <Exps/>
@@ -134,23 +101,10 @@ function App() {
 
           <Page name="experience">
             <div className='spalte'>  
-
-              <TextBox title="Experience ">
-                <p>
-                  As a student of computer science, i have had the opportunity to work with
-                  many different technologies and projects, both at school and in my spare time.
-                  I have worked with both front-end and back-end development, 
-                  and have had the opportunity to work on many different stacks
-                </p>
-                <p>
-                  In the summer of 2023 i will be working as a developer junior consultant at, 
-                  NAV IT (Norwegian Labour and Welfare Administration) in Oslo. There i worked in 
-                  a team of 5 developers, and 2 consultants. 
-                </p>
-                <p>
-                  I have also worked as a graphic designer and jorunalist for the student-organisation
-                  for computer science students at NTNU, Linjeforeningen Online
-                </p>
+              <TextBox title={PageText.p5.title}>
+                <p>{PageText.p5.text1}</p>
+                <p>{PageText.p5.text2}</p>
+                <p>{PageText.p5.text3}</p>
               </TextBox>
             </div>
             <div className='spalte'>
