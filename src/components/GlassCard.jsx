@@ -1,5 +1,4 @@
 import React from "react";
-import "./css/GlassCard.css";
 
 const GlassCard = (props) => {
     let style = {
@@ -17,7 +16,7 @@ const GlassCard = (props) => {
 
   return (  
     <div 
-        className="glasspane card"
+        className="glasspane rounded-4xl p-7 shadow-lg"
         style={style}    
     >
         {props.children}

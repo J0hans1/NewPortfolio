@@ -15,6 +15,12 @@ html, body {
   scroll-snap-stop: always;
 }
 
+.highlight {
+  background: linear-gradient(rgb(124, 224, 255), rgb(238, 141, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #backglass {
   width: 100%;
 

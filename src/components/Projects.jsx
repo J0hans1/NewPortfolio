@@ -1,9 +1,60 @@
-import Project from "./Project";
-import "./css/projects.css";
+import GlassCard from "./GlassCard";
+import React from 'react';
+import './css/UIImage.css';
+
+const UIImage = (props) => {
+    const handleClick = (event) => {
+        event.preventDefault();
+        window.open(props.href, "_blank");  
+    }
+  return (
+    <div className="relative h-fit w-fit ml-5 UIimage-container">
+      <div
+        className="w-64 h-36 rounded-4xl"
+        style={{
+          backgroundImage: `url(${require(`../img/${props.img}`)})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center'
+        }}
+      />
+      <div className="
+      UIimage-overlay absolute top-0 left-0
+      rounded-4xl w-full h-full bg-darkOverlay
+      items-center justify-center hidden
+      " onClick={handleClick}>
+        <img 
+            src={require(`../img/Github.png`)}
+            alt={props.image}
+        />
+      </div>
+    </div>
+  );
+};
+
+const Project = (props) => {
+    return (
+        <GlassCard color="blue" width='80%'>
+            <div className="overflow-hidden h-48 hover:h-64 duration-200 tracking-widest">
+                <h2 className="text-lg font-bold">{props.title}</h2>
+                <div className="flex mt-3">
+                    <p className="leading-7 text-md">
+                        {props.desc}
+                    </p>
+                    <UIImage img={`${props.project}.png`} href={props.href}/>
+                </div>  
+                <div className="flex justify-evenly mt-5 h-12">
+                    {props.children}   
+                </div>     
+            </div>
+      </GlassCard>
+    );
+};
+
 
 const Projects = () => {
     return (
-        <div id="projects">
+        <div className="h-full flex flex-col justify-between py-10">
             <Project 
                 project="Discogolf" 
                 title="DiscoGolf" 
@@ -14,7 +65,6 @@ const Projects = () => {
                     din Trondheim.
                 "
                 >
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Apache_HTTP_Server_Logo_%282016%29.svg/2560px-Apache_HTTP_Server_Logo_%282016%29.svg.png" alt="Apache"/>
                     <img src="https://img.icons8.com/color/48/000000/spring-logo.png" alt="Spring"/>
                     <img src="https://img.icons8.com/color/256/git.png" alt="Git"/>
                     <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java"/>

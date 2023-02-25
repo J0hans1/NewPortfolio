@@ -1,40 +1,3 @@
-.iconButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 70px;
-  height: 70px;
-
-  border-radius: 20px;
-  transition: 0.2s;
-  margin-right: 10%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(131, 204, 238, 0.241);
-}
-
-.ButtonIcon {
-  height: 40px;
-}
-
-.iconButton:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-
-.iconButton:active {
-    transform: scale(0.9);
-    transition: 0.2s;
-}
-
-#linkbuttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 90%;
-}
-
 #Github-button:hover {
   background: linear-gradient(#17151586, #3f3a3a86);
 }
@@ -49,4 +12,4 @@
 
 #CV-button:hover {
   background: linear-gradient(#49ead275, #49eab2a7);
-}
+  }

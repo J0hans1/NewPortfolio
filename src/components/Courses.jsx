@@ -1,4 +1,17 @@
-import Course from "./Course";
+import GlassCard from "./GlassCard";
+
+const Course = (props) => {
+    return (
+        <GlassCard color="blue">
+            <div className="tracking-widest h-12 hover:h-32 overflow-hidden duration-200">
+                <h2 className="text-lg font-bold">{props.title}</h2>
+                <p>{props.code}</p>
+                <br/>
+                <p>{props.description}</p>
+            </div>
+        </GlassCard>
+    );
+};
 
 const Courses = () => {
     return (

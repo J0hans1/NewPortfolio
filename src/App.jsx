@@ -1,18 +1,36 @@
 import './App.css';
-import TextBox from './components/textbox';
 import LinkButtons from './components/LinkButtons';
 import Navbar from './components/Navbar';
 import GlassCard from './components/GlassCard';
 import Courses from './components/Courses';
 import Projects from './components/Projects';
 import NTNU from './img/NTNU.png';
-import Page from './components/page';
 import Exps from './components/Exps';
 import BusinessCard from './components/BuisnessCard';
 import Circles from './components/Circles';
 import IMG1 from './img/cv-transparent-cropped.png';
 import IMG2 from './img/smil-transparent-cropped.png';
+import React, { useRef } from "react";
+import './components/css/textbox.css'
 
+const TextBox = (props) => {
+  return (
+    <div className="textbox leading-8 tracking-widest text-lg">
+      <h2 className='text-3xl'>{props.title}</h2>
+      {props.children}
+    </div>
+  );
+}
+
+function Page(props) {
+  const pageRef = useRef(null);
+
+  return (
+    <div ref={pageRef} id={props.name} className="page">
+        {props.children}
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -24,7 +42,7 @@ function App() {
           <Page name="home" >
             <div className='spalte'>
               <TextBox>
-                <h2>Hello, I am <span className="highlight">Markus Johansen</span></h2>
+                <h2 className='text-3xl'>Hello, I am <span className="highlight">Markus Johansen</span></h2>
                 <p>
                   I am a computer science student at the
                   Norwegian University of  Science and Technology (NTNU),
