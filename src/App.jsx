@@ -76,9 +76,12 @@ function App() {
               <BusinessCard/> 
             </div>
             <div className='spalte'>
-              <div id='meImgContainer' className='glasspane'>
-                <img id="img1" className='meImg' src={IMG1} alt="me"/>
-                <img id="img2"  src={IMG2} alt="me"/>
+              <div id='meImgContainer' className='
+                glasspane overflow-hidden
+                flex items-center justify-center
+                h-100 w-100 rounded-full
+              '>
+                <img id="img1" className='scale-125' src={IMG1} alt="me"/>
               </div>
             </div>
           </Page>

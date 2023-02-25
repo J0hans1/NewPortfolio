@@ -15,6 +15,12 @@ module.exports = {
       '4xl': '50px',
     },
     extend: {
+      width: {
+        '100': '500px',
+      },
+      height: {
+        '100': '500px',
+      },
       colors: {
         glassy: {
           50 : "rgba(255, 255, 255, 0.303)",

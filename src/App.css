@@ -93,30 +93,5 @@ html, body {
 
 #meImgContainer{
   background: linear-gradient(142.84deg, rgba(88, 147, 173, 0.584) 30.3%, rgba(211, 93, 232, 0.544) 85.27%, rgba(212, 93, 232, 0.33) 85.27%);
-  border-radius: 50%;
-  height: 600px;
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
-
-.meImg{
-  height: 107%;
-}
-
-#img2{
-  display: none;
-  height: 110%;
-}
-
-#meImgContainer:hover #img2{
-  display: block;
-}
-
-#meImgContainer:hover #img1{
-  display: none;
-}
-
 
