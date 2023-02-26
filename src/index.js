@@ -8,12 +8,17 @@ import "./fonts/Inter-Regular.woff2"
 import "./fonts/Inter-Bold.woff"
 import "./fonts/Inter-Bold.woff2"
 import "./fonts/Inter-Thin.woff"
+import { Helmet } from "react-helmet";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <React.StrictMode>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>My Developer Portfolio!</title>
+    </Helmet>
     <App />
   </React.StrictMode>
 );
