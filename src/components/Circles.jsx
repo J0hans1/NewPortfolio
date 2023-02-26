@@ -46,15 +46,7 @@ const Circles = () => {
                 // leftFactor="-0.03"
                 breakpoint="hidden 3xl:flex "
             />
-            <Circle
-                size="180px"
-                color="linear-gradient(25.74deg, #38C771 8.85%, #6A56E3 85.16%)"
-                left="713"
-                top="131"
-                // topFactor="0.01"
-                // leftFactor="-0.03"
-                breakpoint="hidden lg:flex 2xl:hidden "
-            />
+
 
             <Circle
                 size="200px"
@@ -85,7 +77,16 @@ const Circles = () => {
                 // leftFactor="0.01"
                 breakpoint="hidden md:flex "
             />
-
+            
+            <Circle
+                size="260px"
+                color="linear-gradient(122.92deg, #81D8FD 14.51%, #D45DE8 90.11%)"
+                left="170"
+                top="690"
+                // topFactor="-0.02"
+                // leftFactor="0.01"
+                breakpoint="hidden md:flex "
+            />
             <Circle
                 size="180px"
                 color="linear-gradient(313.5deg, #3893C7 20.36%, #6A56E3 90.81%)"
@@ -100,7 +101,7 @@ const Circles = () => {
                 size="120px"
                 color="linear-gradient(25.74deg, #38C771 8.85%, #6A56E3 85.16%)"
                 top="400"
-                left="330"
+                left="250"
                 // topFactor="0.02"
                 // leftFactor="0.01"
                 breakpoint="flex md:hidden "
@@ -116,15 +117,7 @@ const Circles = () => {
                 breakpoint="flex md:hidden "
             />
 
-            <Circle
-                size="260px"
-                color="linear-gradient(122.92deg, #81D8FD 14.51%, #D45DE8 90.11%)"
-                left="170"
-                top="690"
-                // topFactor="-0.02"
-                // leftFactor="0.01"
-                breakpoint="hidden md:flex "
-            />
+
         </div>
     );
 };

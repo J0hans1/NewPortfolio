@@ -2,8 +2,8 @@ import GlassCard from "./GlassCard";
 
 const CardProperty = (props) => {
     return (
-        <div className="flex">
-            <h3 className="mr-5 w-1/3 text-sm lg:text-lg font-semibold lg:font-normal">{props.title}</h3>
+        <div className="flex justify-between">
+            <h3 className="text-sm lg:text-lg font-semibold lg:font-normal">{props.title}</h3>
             <p className="text-xs md:text-sm lg:text-md">{props.value}</p>
         </div>
     );

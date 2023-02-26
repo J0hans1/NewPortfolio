@@ -23,7 +23,7 @@ const TextBox = (props) => {
 function Page(props) {
   const pageRef = useRef(null);
   return (
-    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center p-10 md:p-20 justify-between xl:gap-40">
+    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center p-6 sm:p-10 md:p-20 justify-between xl:gap-40">
         {props.children}
     </div>
   );
@@ -54,8 +54,8 @@ function App() {
             <Spalte>
               <TextBox>
                 <h2 className='text-3xl'>{PageText.p1.header} <span className="highlight bg-PBG-lite bg-clip-text">{PageText.p1.name}</span></h2>
-                <p className='text-base'>{PageText.p1.text1}</p>
-                <p className='text-base'>{PageText.p1.text2}</p>
+                <p className='text-sm md:text-base'>{PageText.p1.text1}</p>
+                <p className='text-sm md:text-base'>{PageText.p1.text2}</p>
               </TextBox>  
               <LinkButtons/>            
             </Spalte>
@@ -66,8 +66,8 @@ function App() {
           <Page name="about">
             <Spalte>
                 <TextBox title={PageText.p2.title}>
-                  <p className='text-base'>{PageText.p2.text1}</p>
-                  <p className='text-base'>{PageText.p2.text2}</p>
+                  <p className='text-sm md:text-base'>{PageText.p2.text1}</p>
+                  <p className='text-sm md:text-base'>{PageText.p2.text2}</p>
                 </TextBox>
                 <div className='hidden xl:flex'>
                   <BusinessCard/> 
@@ -103,11 +103,10 @@ function App() {
 
             <Spalte>
               <TextBox title={PageText.p3.title}>
-                <p className='text-base'>{PageText.p3.text1} </p>
-                <p className='text-base'>{PageText.p3.text2} </p>
+                <p className='text-sm md:text-base'>{PageText.p3.text1} </p>
+                <p className='text-sm md:text-base'>{PageText.p3.text2} </p>
               </TextBox>
-
-              <GlassCard>
+              <GlassCard width="100%">
                 <img src={NTNU} alt="NTNU Logo" />
               </GlassCard>              
             </Spalte>
@@ -120,8 +119,8 @@ function App() {
           <Page name="skillsets">
             <Spalte>
                 <TextBox title={PageText.p4.title}>
-                  <p className='text-base'>{PageText.p4.text1}</p>
-                  <p className='text-base'>{PageText.p4.text2}</p>
+                  <p className='text-sm md:text-base'>{PageText.p4.text1}</p>
+                  <p className='text-sm md:text-base'>{PageText.p4.text2}</p>
                 </TextBox>
             </Spalte>
             <Spalte>
@@ -132,9 +131,9 @@ function App() {
           <Page name="experience">
             <Spalte>
               <TextBox title={PageText.p5.title}>
-                <p className='text-base'>{PageText.p5.text1}</p>
-                <p className='text-base'>{PageText.p5.text2}</p>
-                <p className='text-base'>{PageText.p5.text3}</p>
+                <p className='text-sm md:text-base'>{PageText.p5.text1}</p>
+                <p className='text-sm md:text-base'>{PageText.p5.text2}</p>
+                <p className='text-sm md:text-base'>{PageText.p5.text3}</p>
               </TextBox>
             </Spalte>
             <Spalte>
