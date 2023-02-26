@@ -9,6 +9,7 @@ import "./fonts/Inter-Bold.woff"
 import "./fonts/Inter-Bold.woff2"
 import "./fonts/Inter-Thin.woff"
 import { Helmet } from "react-helmet";
+import Favicon from 'react-favicon';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,8 +18,9 @@ root.render(
   <React.StrictMode>
     <Helmet>
         <meta charSet="utf-8" />
-        <title>My Developer Portfolio!</title>
+        <title>Markus Johansen's portfolio</title>
     </Helmet>
+    <Favicon url='https://img.icons8.com/nolan/256/portfolio.png' />
     <App />
   </React.StrictMode>
 );
