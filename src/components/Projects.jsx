@@ -1,6 +1,5 @@
 import GlassCard from "./GlassCard";
 import React from 'react';
-import './css/UIImage.css';
 import { ProjectData } from "../obj.ts";
 
 const UIImage = (props) => {

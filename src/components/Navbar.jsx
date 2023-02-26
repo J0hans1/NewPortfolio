@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from "react";
-import './css/navButton.css'
+// import React, { useState, useEffect } from "react";
 
 
 const NavButton = (props) => {
-    const [active, setActive] = useState(false);
+    // const [active, setActive] = useState(false);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        const pageElement = document.getElementById(props.pageId);
-        if (pageElement) {
-          setActive(window.pageYOffset >= pageElement.offsetTop);
-        }
-      };
+    // useEffect(() => {
+    //   const handleScroll = () => {
+    //     const pageElement = document.getElementById(props.pageId);
+    //     if (pageElement) {
+    //       setActive(window.pageYOffset >= pageElement.offsetTop);
+    //     }
+    //   };
   
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, [props.pageId]);
+    //   window.addEventListener("scroll", handleScroll);
+    //   return () => {
+    //     window.removeEventListener("scroll", handleScroll);
+    //   };
+    // }, [props.pageId]);
 
 
     const handleClick = () => {

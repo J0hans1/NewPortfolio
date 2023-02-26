@@ -1,4 +1,3 @@
-import './App.css';
 import LinkButtons from './components/LinkButtons';
 import Navbar from './components/Navbar';
 import GlassCard from './components/GlassCard';
@@ -9,9 +8,7 @@ import Exps from './components/Exps';
 import BusinessCard from './components/BuisnessCard';
 import Circles from './components/Circles';
 import IMG1 from './img/cv-transparent-cropped.png';
-import IMG2 from './img/smil-transparent-cropped.png';
 import React, { useRef } from "react";
-import './components/css/textbox.css'
 import {PageText} from './obj.ts';
 
 const TextBox = (props) => {
