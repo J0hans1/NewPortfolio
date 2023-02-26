@@ -8,7 +8,7 @@ const UIImage = (props) => {
         window.open(props.href, "_blank");  
     }
   return (
-    <div className="relative h-fit w-fit ml-5 UIimage-container">
+    <div className="hidden 2xl:flex relative h-auto w-auto ml-5 UIimage-container">
       <div
         className="w-64 h-36 rounded-4xl"
         style={{
@@ -34,11 +34,11 @@ const UIImage = (props) => {
 
 const Project = (props) => {
     return (
-        <GlassCard color="blue" width='80%'>
-            <div className="overflow-hidden h-20 xl:h-48 hover:h-64 duration-200 tracking-widest">
-                <h2 className="text-lg font-bold">{props.title}</h2>
+        <GlassCard color="blue" width="w-1/3 sm:w-full lg:w-4/5">
+            <div className="overflow-hidden h-20 xl:h-auto 2xl:h-48 2xl:hover:h-64 duration-200 tracking-widest">
+                <h2 className="text-sm sm:text-lg font-bold">{props.title}</h2>
                 <div className="flex flex-col xl:flex-row mt-3">
-                    <p className="leading-5 xl:leading-7 text-sm xl:text-md gap-2 xl:gap-0">
+                    <p className="hidden sm:block leading-5 xl:leading-7 text-sm xl:text-md gap-2 xl:gap-0">
                         {props.desc}
                     </p>
                     <UIImage img={`${props.project}.png`} href={props.href}/>
@@ -54,7 +54,7 @@ const Project = (props) => {
 
 const Projects = () => {
     return (
-        <div className="h-full hidden lg:flex flex-col items-center justify-around gap-5">
+        <div className="h-full hidden lg:flex xl:flex-col items-center justify-around gap-5">
             <Project 
                 project={ProjectData.p1.title} 
                 title={ProjectData.p1.title} 

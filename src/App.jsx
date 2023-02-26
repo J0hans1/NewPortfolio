@@ -23,7 +23,7 @@ const TextBox = (props) => {
 function Page(props) {
   const pageRef = useRef(null);
   return (
-    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center p-6 sm:p-10 md:p-20 justify-between xl:gap-40">
+    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center p-6 md:p-10 xl:p-20 justify-between xl:gap-10 2xl:gap-40">
         {props.children}
     </div>
   );
@@ -49,7 +49,7 @@ function App() {
 
         <Navbar/>
 
-        <div className='w-11/12 snap-container relative top-0'>
+        <div className='w-11/12 snap-container  relative top-0'>
           <Page name="home" >
             <Spalte>
               <TextBox>
@@ -100,13 +100,12 @@ function App() {
           </Page>
 
           <Page name="education">
-
             <Spalte>
               <TextBox title={PageText.p3.title}>
                 <p className='text-sm md:text-base'>{PageText.p3.text1} </p>
                 <p className='text-sm md:text-base'>{PageText.p3.text2} </p>
               </TextBox>
-              <GlassCard width="100%">
+              <GlassCard width="w-full">
                 <img src={NTNU} alt="NTNU Logo" />
               </GlassCard>              
             </Spalte>

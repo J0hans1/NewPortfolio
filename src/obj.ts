@@ -55,7 +55,7 @@ export const CourseData: Record<string, { [key: string]: string }> = {
 export const ProjectData: Record<string, { [key: string]: string }> = {
     p1: {
         title: "DiscoGolf",
-        text: "App for Logging scorecards at different frisbee golf courses din Trondheim.",
+        text: "Frisbee golf companion app for courses in Trondheim.",
         href: "https://github.com/J0hans1/IT1901-DiscoGolf"
     },
     p2: {
