@@ -43,7 +43,7 @@ const NavButton = (props) => {
                 {props.text}
             </p>
             <div
-                className="duration-300 h-0.5 bg-glassy-150 "
+                className="duration-300 h-0.5 bg-glassy-150 w-0"
                 style={{
                     // width: active ? "100%" : "0%"
                     }}

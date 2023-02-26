@@ -1,8 +1,4 @@
 
-  .navlink-container div{
-    width: 0%;
-  }
-  
   .navlink-container:hover div{
     width: 100%;
   }
