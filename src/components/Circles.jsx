@@ -36,7 +36,7 @@ function Circle(props) {
 
 const Circles = () => {
     return (
-        <div id="circles" className="sticky top-0"> {/* sticky is a class that makes the div stay in place when scrolling */}
+        <div id="circles" className=" sticky top-0 h-full w-full "> {/* sticky is a class that makes the div stay in place when scrolling */}
             <Circle
                 size="180px"
                 color="linear-gradient(25.74deg, #38C771 8.85%, #6A56E3 85.16%)"
@@ -44,7 +44,16 @@ const Circles = () => {
                 top="131"
                 // topFactor="0.01"
                 // leftFactor="-0.03"
-                breakpoint="xl:flex hidden"
+                breakpoint="hidden 3xl:flex "
+            />
+            <Circle
+                size="180px"
+                color="linear-gradient(25.74deg, #38C771 8.85%, #6A56E3 85.16%)"
+                left="713"
+                top="131"
+                // topFactor="0.01"
+                // leftFactor="-0.03"
+                breakpoint="hidden lg:flex 2xl:hidden "
             />
 
             <Circle
@@ -54,7 +63,7 @@ const Circles = () => {
                 top="650"
                 // topFactor="-0.1"
                 // leftFactor="0.1"
-                breakpoint="xl:flex hidden"
+                breakpoint="hidden 2xl:flex "
             />
 
             <Circle
@@ -64,7 +73,7 @@ const Circles = () => {
                 top="467"
                 // topFactor="0.05"
                 // leftFactor="-0.01"
-                breakpoint="xl:flex hidden:"
+                breakpoint="hidden xl:flex "
             />
 
             <Circle
@@ -74,7 +83,7 @@ const Circles = () => {
                 left="-24"
                 // topFactor="0.02"
                 // leftFactor="0.01"
-                breakpoint="xl:flex hidden:"
+                breakpoint="hidden md:flex "
             />
 
             <Circle
@@ -84,7 +93,7 @@ const Circles = () => {
                 top="690"
                 // topFactor="-0.02"
                 // leftFactor="0.01"
-                breakpoint="xl:flex hidden"
+                breakpoint="hidden md:flex "
             />
         </div>
     );

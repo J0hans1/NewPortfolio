@@ -2,7 +2,7 @@ import { Skillsets } from "../obj.ts";
 
 const Exp = (props) => {
     return(
-        <div className="flex-col h-4/5">
+        <div className="flex-col h-4/5 w-full md:w-2/3">
             <div className="flex justify-between">
                 <h2 className="text-lg font-bold">{props.title}</h2>
                 <p>{props.percent}</p>
@@ -20,7 +20,7 @@ const Exp = (props) => {
 
 const Exps = () => {
     return(
-        <div className='flex flex-col h-1/2 justify-evenly w-4/5'>
+        <div className='flex flex-col h-1/2 justify-evenly items-center'>
             <Exp title={Skillsets.s1.title} percent={Skillsets.s1.percent}/>
             <Exp title={Skillsets.s2.title} percent={Skillsets.s2.percent}/>
             <Exp title={Skillsets.s3.title} percent={Skillsets.s3.percent}/>

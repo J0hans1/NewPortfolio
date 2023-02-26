@@ -23,7 +23,7 @@ const TextBox = (props) => {
 function Page(props) {
   const pageRef = useRef(null);
   return (
-    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center">
+    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center p-20 justify-between xl:gap-40">
         {props.children}
     </div>
   );
@@ -31,7 +31,7 @@ function Page(props) {
 
 function Spalte(props) {
   return (
-    <div className="flex flex-col justify-center h-full w-full xl:w-1/2 ml-10%">
+    <div className="flex flex-col justify-center h-full w-full xl:w-1/2">
       {props.children}
     </div>
   );
@@ -86,12 +86,12 @@ function App() {
             </Spalte>
 
             <Spalte>
-              <div className='
-                bg-PBG glasspane overflow-hidden backdrop-blur-sm
-                items-center justify-center
-                h-64 w-64 xl:h-100 xl:w-100 rounded-full hidden xl:flex
-              '>
-                <img id="img1" className='scale-125' src={IMG1} alt="me"/>
+                <div className='
+                  bg-PBG glasspane overflow-hidden backdrop-blur-sm
+                  items-center justify-center
+                  h-64 w-64 xl:h-100 xl:w-100 rounded-full hidden xl:flex
+                '>
+                  <img id="img1" className='scale-125' src={IMG1} alt="me"/>
               </div>
             </Spalte>
           </Page>

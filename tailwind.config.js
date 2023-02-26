@@ -15,6 +15,9 @@ module.exports = {
       '4xl': '50px',
     },
     extend: {
+      screens: {
+        '3xl': '1750px',
+      },
       backgroundImage: {
         'PBG': "linear-gradient(142.84deg, rgba(88, 147, 173, 0.584) 30.3%, rgba(211, 93, 232, 0.544) 85.27%, rgba(212, 93, 232, 0.33) 85.27%);",
         'PBG-lite' : "linear-gradient(rgb(124, 224, 255), rgb(238, 141, 255))",

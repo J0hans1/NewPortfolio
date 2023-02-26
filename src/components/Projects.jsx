@@ -35,15 +35,15 @@ const UIImage = (props) => {
 const Project = (props) => {
     return (
         <GlassCard color="blue" width='80%'>
-            <div className="overflow-hidden h-48 hover:h-64 duration-200 tracking-widest">
+            <div className="overflow-hidden h-20 xl:h-48 hover:h-64 duration-200 tracking-widest">
                 <h2 className="text-lg font-bold">{props.title}</h2>
-                <div className="flex mt-3">
-                    <p className="leading-7 text-md">
+                <div className="flex flex-col xl:flex-row mt-3">
+                    <p className="leading-5 xl:leading-7 text-sm xl:text-md gap-2 xl:gap-0">
                         {props.desc}
                     </p>
                     <UIImage img={`${props.project}.png`} href={props.href}/>
                 </div>  
-                <div className="flex justify-evenly mt-5 h-12">
+                <div className="justify-evenly mt-5 h-12 hidden xl:flex">
                     {props.children}   
                 </div>     
             </div>
@@ -54,7 +54,7 @@ const Project = (props) => {
 
 const Projects = () => {
     return (
-        <div className="h-full flex flex-col justify-between py-10">
+        <div className="h-full flex flex-col items-center justify-around gap-5">
             <Project 
                 project={ProjectData.p1.title} 
                 title={ProjectData.p1.title} 
