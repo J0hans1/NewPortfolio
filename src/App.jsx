@@ -69,21 +69,24 @@ function App() {
                   <p>{PageText.p2.text1}</p>
                   <p>{PageText.p2.text2}</p>
                 </TextBox>
-                <div className='flex-row xl:hidden'>
-                  <div className='
-                  bg-PBG backdrop-blur-sm overflow-hidden
-                  flex items-center justify-center
-                  h-64 w-64 xl:h-100 xl:w-100 rounded-full
-                '>
-                  <img id="img1" className='scale-125' src={IMG1} alt="me"/>
-                </div>
-                  <BusinessCard/> 
-
-                </div>
                 <div className='hidden xl:flex'>
                   <BusinessCard/> 
                 </div>
             </Spalte>
+
+            <div className='flex flex-col w-full items-center xl:hidden gap-10'>
+                <div className='
+                  bg-PBG backdrop-blur-sm overflow-hidden
+                  flex items-center justify-center
+                  h-64 w-64 xl:h-100 xl:w-100 rounded-full
+                '>
+                    <img id="img1" className='scale-125' src={IMG1} alt="me"/>
+                </div>
+                <BusinessCard/> 
+            </div>
+
+
+
 
             <Spalte>
                 <div className='

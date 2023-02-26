@@ -54,7 +54,7 @@ const Project = (props) => {
 
 const Projects = () => {
     return (
-        <div className="h-full flex flex-col items-center justify-around gap-5">
+        <div className="h-full hidden lg:flex flex-col items-center justify-around gap-5">
             <Project 
                 project={ProjectData.p1.title} 
                 title={ProjectData.p1.title} 

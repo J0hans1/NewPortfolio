@@ -20,7 +20,7 @@ const Exp = (props) => {
 
 const Exps = () => {
     return(
-        <div className='flex flex-col h-1/2 justify-evenly items-center'>
+        <div className='flex flex-col h-full lg:h-1/2 justify-evenly items-center'>
             <Exp title={Skillsets.s1.title} percent={Skillsets.s1.percent}/>
             <Exp title={Skillsets.s2.title} percent={Skillsets.s2.percent}/>
             <Exp title={Skillsets.s3.title} percent={Skillsets.s3.percent}/>
