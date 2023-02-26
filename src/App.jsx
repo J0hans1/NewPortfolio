@@ -23,7 +23,7 @@ const TextBox = (props) => {
 function Page(props) {
   const pageRef = useRef(null);
   return (
-    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center p-6 md:p-10 xl:p-20 justify-between xl:gap-10 2xl:gap-40">
+    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center p-6 mt-10 sm:mt-0 md:p-10 xl:p-20 justify-between gap-2 xl:gap-10 2xl:gap-40">
         {props.children}
     </div>
   );
@@ -49,7 +49,7 @@ function App() {
 
         <Navbar/>
 
-        <div className='w-11/12 snap-container  relative top-0'>
+        <div className='w-11/12 snap-container relative top-0'>
           <Page name="home" >
             <Spalte>
               <TextBox>
