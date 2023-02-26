@@ -87,6 +87,36 @@ const Circles = () => {
             />
 
             <Circle
+                size="180px"
+                color="linear-gradient(313.5deg, #3893C7 20.36%, #6A56E3 90.81%)"
+                top="-78"
+                left="-24"
+                // topFactor="0.02"
+                // leftFactor="0.01"
+                breakpoint="flex md:hidden "
+            />
+
+            <Circle
+                size="120px"
+                color="linear-gradient(25.74deg, #38C771 8.85%, #6A56E3 85.16%)"
+                top="400"
+                left="330"
+                // topFactor="0.02"
+                // leftFactor="0.01"
+                breakpoint="flex md:hidden "
+            />
+
+            <Circle
+                size="100px"
+                color="linear-gradient(122.92deg, #81D8FD 14.51%, #D45DE8 90.11%)"
+                top="800"
+                left="-10"
+                // topFactor="0.02"
+                // leftFactor="0.01"
+                breakpoint="flex md:hidden "
+            />
+
+            <Circle
                 size="260px"
                 color="linear-gradient(122.92deg, #81D8FD 14.51%, #D45DE8 90.11%)"
                 left="170"
