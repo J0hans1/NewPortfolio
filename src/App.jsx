@@ -25,91 +25,121 @@ const TextBox = (props) => {
 
 function Page(props) {
   const pageRef = useRef(null);
-
   return (
-    <div ref={pageRef} id={props.name} className="page">
+    <div ref={pageRef} id={props.name} className="flex flex-col xl:flex-row h-screen w-full snap-center">
         {props.children}
+    </div>
+  );
+}
+
+function Spalte(props) {
+  return (
+    <div className="flex flex-col justify-center h-full w-full xl:w-1/2 ml-10%">
+      {props.children}
     </div>
   );
 }
 
 function App() {
   return (
-    <div id="background" className="fullscreen">
-      <Circles/>                                                
-      <div id="back-glass" className="fullscreen  sticky-wrapper">
+    <div className="w-full relative bg-background">
+
+      <Circles/>        
+
+      <div className="w-full h-full flex top-0 left-0" style={{
+        background: 'rgba(255, 255, 255, 0.079)'
+       }}>
+
         <Navbar/>
-        <div className='page-container snap-container'>
+
+        <div className='w-11/12 snap-container relative top-0'>
           <Page name="home" >
-            <div className='spalte'>
+            <Spalte>
               <TextBox>
-                <h2 className='text-3xl'>{PageText.p1.header} <span className="highlight">{PageText.p1.name}</span></h2>
+                <h2 className='text-3xl'>{PageText.p1.header} <span className="highlight bg-PBG-lite bg-clip-text">{PageText.p1.name}</span></h2>
                 <p>{PageText.p1.text1}</p>
                 <p>{PageText.p1.text2}</p>
-              </TextBox>
-              <LinkButtons/>
-            </div>
-            <div className='spalte'></div>
+              </TextBox>  
+              <LinkButtons/>            
+            </Spalte>
+
+            <Spalte></Spalte>
           </Page>
 
           <Page name="about">
-            <div className='spalte'>
-              <TextBox title={PageText.p2.title}>
-                <p>{PageText.p2.text1}</p>
-                <p>{PageText.p2.text2}</p>
-              </TextBox>
-              <BusinessCard/> 
-            </div>
-            <div className='spalte'>
-              <div id='meImgContainer' className='
-                glasspane overflow-hidden
-                flex items-center justify-center
-                h-100 w-100 rounded-full
+            <Spalte>
+                <TextBox title={PageText.p2.title}>
+                  <p>{PageText.p2.text1}</p>
+                  <p>{PageText.p2.text2}</p>
+                </TextBox>
+                <div className='flex-row xl:hidden'>
+                  <div className='
+                  bg-PBG backdrop-blur-sm overflow-hidden
+                  flex items-center justify-center
+                  h-64 w-64 xl:h-100 xl:w-100 rounded-full
+                '>
+                  <img id="img1" className='scale-125' src={IMG1} alt="me"/>
+                </div>
+                  <BusinessCard/> 
+
+                </div>
+                <div className='hidden xl:flex'>
+                  <BusinessCard/> 
+                </div>
+            </Spalte>
+
+            <Spalte>
+              <div className='
+                bg-PBG glasspane overflow-hidden backdrop-blur-sm
+                items-center justify-center
+                h-64 w-64 xl:h-100 xl:w-100 rounded-full hidden xl:flex
               '>
                 <img id="img1" className='scale-125' src={IMG1} alt="me"/>
               </div>
-            </div>
+            </Spalte>
           </Page>
 
           <Page name="education">
-            <div className='spalte'>
+
+            <Spalte>
               <TextBox title={PageText.p3.title}>
                 <p> {PageText.p3.text1} </p>
                 <p> {PageText.p3.text2} </p>
               </TextBox>
 
               <GlassCard>
-                <img src={NTNU} alt="NTNU Logo"/>
-              </GlassCard>
-            </div>
-            <div className='spalte'>
+                <img src={NTNU} alt="NTNU Logo" />
+              </GlassCard>              
+            </Spalte>
+
+            <Spalte>
                 <Courses/>
-            </div>
+            </Spalte>
           </Page>
 
           <Page name="skillsets">
-            <div className='spalte'>
-              <TextBox title={PageText.p4.title}>
-                <p>{PageText.p4.text1}</p>
-                <p>{PageText.p4.text2}</p>
-              </TextBox>
-            </div>
-            <div className='spalte'>
-              <Exps/>
-            </div>
+            <Spalte>
+                <TextBox title={PageText.p4.title}>
+                  <p>{PageText.p4.text1}</p>
+                  <p>{PageText.p4.text2}</p>
+                </TextBox>
+            </Spalte>
+            <Spalte>
+                <Exps/>
+            </Spalte>
           </Page>
 
           <Page name="experience">
-            <div className='spalte'>  
+            <Spalte>
               <TextBox title={PageText.p5.title}>
                 <p>{PageText.p5.text1}</p>
                 <p>{PageText.p5.text2}</p>
                 <p>{PageText.p5.text3}</p>
               </TextBox>
-            </div>
-            <div className='spalte'>
+            </Spalte>
+            <Spalte>
                 <Projects/> 
-            </div>
+            </Spalte>
           </Page>
         </div>
       </div>

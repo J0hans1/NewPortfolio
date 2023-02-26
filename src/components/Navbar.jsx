@@ -55,7 +55,7 @@ const NavButton = (props) => {
 
 const Navbar = () => {
     return (
-        <div className="h-screen w-50 glasspane sticky">
+        <div className="h-screen w-50 bg-glassy-25 backdrop-blur-md sticky top-0 hidden md:block">
             <nav className="flex flex-col justify-center h-full w-full">
                 <NavButton text="Home" pageId="home"/>
                 <NavButton text="About" pageId="about"/>

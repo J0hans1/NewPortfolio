@@ -16,7 +16,7 @@ const Course = (props) => {
 
 const Courses = () => {
     return (
-        <div className='courses'>
+        <div className='flex flex-col h-2/3 justify-between'>
             <Course title={CourseData.c1.title} code={CourseData.c1.code} description={CourseData.c1.text}/>
             <Course title={CourseData.c2.title} code={CourseData.c2.code} description={CourseData.c2.text}/>
             <Course title={CourseData.c3.title} code={CourseData.c3.code} description={CourseData.c3.text}/>

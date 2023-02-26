@@ -16,7 +16,7 @@ const GlassCard = (props) => {
 
   return (  
     <div 
-        className="glasspane rounded-4xl p-7 shadow-lg"
+        className=" rounded-4xl p-7 shadow-lg bg-glassy-25 backdrop-blur-sm"
         style={style}    
     >
         {props.children}

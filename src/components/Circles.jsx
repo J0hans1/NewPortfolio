@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 
 
 //react component using the circle class. changeable size, color and position
@@ -16,7 +16,7 @@ function Circle(props) {
 
 
   return (
-    <div className="rounded-full"
+    <div className={`${props.breakpoint} rounded-full `}
     style={{
       position: 'absolute',
       width: props.size,
@@ -36,7 +36,7 @@ function Circle(props) {
 
 const Circles = () => {
     return (
-        <div id="circles" className="sticky"> {/* sticky is a class that makes the div stay in place when scrolling */}
+        <div id="circles" className="sticky top-0"> {/* sticky is a class that makes the div stay in place when scrolling */}
             <Circle
                 size="180px"
                 color="linear-gradient(25.74deg, #38C771 8.85%, #6A56E3 85.16%)"
@@ -44,6 +44,7 @@ const Circles = () => {
                 top="131"
                 // topFactor="0.01"
                 // leftFactor="-0.03"
+                breakpoint="xl:flex hidden"
             />
 
             <Circle
@@ -53,6 +54,7 @@ const Circles = () => {
                 top="650"
                 // topFactor="-0.1"
                 // leftFactor="0.1"
+                breakpoint="xl:flex hidden"
             />
 
             <Circle
@@ -62,6 +64,7 @@ const Circles = () => {
                 top="467"
                 // topFactor="0.05"
                 // leftFactor="-0.01"
+                breakpoint="xl:flex hidden:"
             />
 
             <Circle
@@ -71,6 +74,7 @@ const Circles = () => {
                 left="-24"
                 // topFactor="0.02"
                 // leftFactor="0.01"
+                breakpoint="xl:flex hidden:"
             />
 
             <Circle
@@ -80,6 +84,7 @@ const Circles = () => {
                 top="690"
                 // topFactor="-0.02"
                 // leftFactor="0.01"
+                breakpoint="xl:flex hidden"
             />
         </div>
     );

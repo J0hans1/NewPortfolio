@@ -25,14 +25,15 @@ const IconButton = (props) => {
         <button 
             id={`${props.image}-button`}
             className="
-            flex items-center w-20 h-20 glasspane rounded-full 
+            flex items-center w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20
+          bg-glassy-25 backdrop-blur-sm rounded-full 
             shadow-sm hover:shadow-lg duration-200 justify-center
             hover:scale-110 active:scale-95
             " 
             onClick={handleClick}
         >
             <img 
-                className="h-10"
+                className="h-6 md:h-8 lg:h-10"
                 src={require(`../img/${props.image}.png`)}
                 alt={props.image}
             />
@@ -42,7 +43,7 @@ const IconButton = (props) => {
 
 //link to github.png from here to img folder
 
-const LinkButtons = (props) => {
+const LinkButtons = () => {
     return (
         <div className="flex justify-evenly">
             <IconButton 

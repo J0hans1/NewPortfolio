@@ -7,8 +7,8 @@ const Exp = (props) => {
                 <h2 className="text-lg font-bold">{props.title}</h2>
                 <p>{props.percent}</p>
             </div>
-            <div className="w-full h-5 rounded-lg bg-glassy-50">
-                <div className="h-full rounded-lg" style={
+            <div className="w-full h-5 rounded-lg bg-glassy-25 backdrop-blur-sm">
+                <div className="h-full rounded-lg backdrop-blur-md" style={
                 {
                     width: props.percent,
                     backgroundImage: " linear-gradient(142.84deg, rgba(92, 180, 217, 0.749) 20.3%, rgba(212, 93, 232, 0.53) 85.27%, rgba(212, 93, 232, 0.53) 85.27%)"
